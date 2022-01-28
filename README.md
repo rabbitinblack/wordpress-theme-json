@@ -12,7 +12,7 @@
 ### $schema
 ใส่ https://schemas.wp.org/trunk/theme.json เพื่อช่วยในการเช็คว่าใส่ properties ถูกต้องมั้ย
 
-```
+```json
 {
 	"$schema": "https://schemas.wp.org/trunk/theme.json"
 }
