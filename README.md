@@ -57,6 +57,38 @@
 #### blocks
 สำหรับตั้งค่า settings แยกสำหรับ block ที่กำหนด โดยสามารถดู https://developer.wordpress.org/block-editor/reference-guides/core-blocks/ เพื่อใช้ประกอบในการตั้งค่า settings ของแต่ละ block และดูชื่อ block ที่ใช้ในการตั้งค่าได้ที่ด้านล่าง [Block List](https://github.com/rabbitinblack/wordpress-theme-json#block-list)
 
+#### border
+- color สามารถกำหนดสีของเส้นกรอบได้
+- radius สามารถกำหนดความมนของเส้นกรอบได้
+- style สามารถกำหนดลักษณะของเส้นกรอบได้
+- width สามารกำหนดความกว้างของเส้นกรอบได้
+
+```json
+"border": {
+	"color": true,
+	"radius": true,
+	"style": true,
+	"width": true
+}
+```
+
+#### color
+สามารถกำหนด
+- background สามารถกำหนดสีให้ background ได้
+- custom สามารถปรับค่าสีที่กำหนดได้
+- customDuotone สามารถปรับค่าสีสำหรับ Duotone ได้
+- customGradient สามารถปรับค่าสีสำหรับ Gradient ได้
+- defaultGradients สามารถเลือกสีมาตรฐานของ Gradient ที่ WordPress เตรียมไว้ให้
+- defaultPalette สามารถเลือกชุดสีมาตรฐานที่ WordPress เตรียมไว้ให้
+- duotone สามารถกำหนดชุดสี Duotone ได้
+	- name
+	- slug
+	- colors
+- gradients
+- link
+- palette
+- text
+
 ## Block List
 - core/archives
 - core/audio
