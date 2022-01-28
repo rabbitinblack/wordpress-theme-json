@@ -100,14 +100,63 @@
 - defaultPalette สามารถเลือกชุดสีมาตรฐานที่ WordPress เตรียมไว้ให้
 	- true ได้
 	- false ไม่ได้
-- duotone สามารถกำหนดชุดสี Duotone ได้
-	- name
-	- slug
-	- colors
-- gradients
-- link
-- palette
-- text
+- duotone สร้างชุดสีสำหรับ Duotone
+	- name ชื่อของ duotone นี้
+	- slug slug ของ duotone นี้ เพื่อนำไปสร้าง variable css ใน pattern นี้ `--wp--preset--duotone--{slug}`
+	- colors สีที่ใช้สำหรับ duotone เป็นคู่สีแบบ array
+- gradients สร้างชุดสีสำหรับ Gradients
+	- name ชื่อของ gradient นี้
+	- slug slug ของ gradient นี้ เพื่อนำไปสร้าง variable css ใน pattern นี้ `--wp--preset--gradient--{slug}`
+	- gradient สามารถใช้ https://cssgradient.io/ เพื่อปรับแต่ง gradient ที่ต้องการแล้วนำมาใส่
+- link สามารถเลือกสีสำหรับลิงก์
+	- true ได้
+	- false ไม่ได้
+- palette สร้างชุดสีพื้นฐาน
+	- name ชื่อของสีนี้
+	- slug slug ของสีนี้ เพื่อนำไปสร้าง variable css ใน pattern นี้ `--wp--preset--color--{slug}`
+	- color ค่าของสี โดยรูปแบบของค่าสีที่ใส่ สามารถดูได้จาก https://developer.mozilla.org/en-US/docs/Web/CSS/color
+- text สามารถเลือกสีให้ตัวอักษร
+	- true ได้
+	- false ไม่ได้
+
+```json
+"color": {
+	"background": true,
+	"custom": true,
+	"customDuotone": true,
+	"customGradient": true,
+	"defaultGradients": true,
+	"defaultPalette": true,
+	"duotone": [
+		{
+			"name": "Black and White",
+			"slug": "black-and-white",
+			"colors": [ "#000000", "#ffffff" ]
+		}
+	],
+	"gradients": [
+			{
+			"name": "Black to White",
+			"slug": "black-white",
+			"gradient": "linear-gradient(135deg,rgb(0,0,0) 50%,rgb(255,255,255) 100%)"
+		}
+	],
+	"link": true,
+	"palette": [
+		{
+			"name": "Black",
+			"slug": "black",
+			"color": "#000000"
+		},
+		{
+			"name": "White",
+			"slug": "white",
+			"color": "#FFFFFF"
+		}
+	],
+	"text": true
+}
+```
 
 # Block List
 - core/archives
