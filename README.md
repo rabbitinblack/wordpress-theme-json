@@ -81,7 +81,6 @@
 ```
 
 ### color
-สามารถกำหนด
 - `background` สามารถกำหนดสีให้ background
 	- `true` ได้
 	- `false` ไม่ได้
@@ -157,6 +156,26 @@
 	"text": true
 }
 ```
+
+### layout
+- `contentSize` กำหนดความกว้างของกล่องสำหรับ content
+- `wideSize` กำหนดความกว้างของกล่องสำหรับการใช้ align wide
+
+```
+"layout": {
+	"contentSize": "840px",
+	"wideSize": "1100px"
+}
+```
+
+### spacing
+- `blockGap` ทำให้ block สามารถกำหนดระยะห่าง
+>> แต่จากที่ทดลองใช้งาน ยังงงกับมันอยู่ว่า จริง ๆ มันใช้งานอย่างไร
+	- `true` ได้
+	- `false` ไม่ได้
+- `margin`
+- `padding`
+- `units`
 
 # Block List
 - core/archives
