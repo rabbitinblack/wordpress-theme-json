@@ -25,12 +25,12 @@
 - customTemplates
 - templateParts
 
-### version
 ---
+### version
 ในตอนที่อ่าน version ที่ให้ใช้เป็น version 2
 
-### $schema
 ---
+### $schema
 ใส่ https://schemas.wp.org/trunk/theme.json เพื่อช่วยในการเช็คว่าใส่ properties ถูกต้องมั้ย
 
 ```json
@@ -39,8 +39,8 @@
 }
 ```
 
-### settings
 ---
+### settings
 สำหรับกำหนด Settings ของ block ทั้งหมด และสามารถกำหนด Settings ให้กับแต่ละ block ได้ ซึ่ง Settings จะกำหนดได้เฉพาะ Settings ที่ block นั้น ๆ มีด้วย
 
 โดยแบ่งการตั้งค่าได้ด้งนี้
