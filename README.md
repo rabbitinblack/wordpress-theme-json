@@ -58,18 +58,18 @@
 สำหรับตั้งค่า settings แยกสำหรับ block ที่กำหนด โดยสามารถดู https://developer.wordpress.org/block-editor/reference-guides/core-blocks/ เพื่อใช้ประกอบในการตั้งค่า settings ของแต่ละ block และดูชื่อ block ที่ใช้ในการตั้งค่าได้ที่ด้านล่าง [Block List](https://github.com/rabbitinblack/wordpress-theme-json#block-list)
 
 ### border
-- **color** สามารถกำหนดสีของเส้นกรอบ
-	- *true* ได้
-	- *false* ไม่ได้
-- **radius** สามารถกำหนดความมนของเส้นกรอบ
-	- *true* ได้
-	- *false* ไม่ได้
-- **style** สามารถกำหนดลักษณะของเส้นกรอบ
-	- *true* ได้
-	- *false* ไม่ได้
-- **width** สามารกำหนดความกว้างของเส้นกรอบ
-	- *true* ได้
-	- *false* ไม่ได้
+- `color` สามารถกำหนดสีของเส้นกรอบ
+	- `true` ได้
+	- `false` ไม่ได้
+- `radius` สามารถกำหนดความมนของเส้นกรอบ
+	- `true` ได้
+	- `false` ไม่ได้
+- `style` สามารถกำหนดลักษณะของเส้นกรอบ
+	- `true` ได้
+	- `false` ไม่ได้
+- `width` สามารกำหนดความกว้างของเส้นกรอบ
+	- `true` ได้
+	- `false` ไม่ได้
 
 ```json
 "border": {
