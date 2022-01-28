@@ -20,15 +20,17 @@
 ## Properties ที่ใช้
 - [version](https://github.com/rabbitinblack/wordpress-theme-json#version)
 - [$schema](https://github.com/rabbitinblack/wordpress-theme-json#schema)
-- settings
+- [settings](https://github.com/rabbitinblack/wordpress-theme-json#settings)
 - styles
 - customTemplates
 - templateParts
 
 ### version
+---
 ในตอนที่อ่าน version ที่ให้ใช้เป็น version 2
 
 ### $schema
+---
 ใส่ https://schemas.wp.org/trunk/theme.json เพื่อช่วยในการเช็คว่าใส่ properties ถูกต้องมั้ย
 
 ```json
@@ -36,7 +38,9 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json"
 }
 ```
+
 ### settings
+---
 สำหรับกำหนด Settings ของ block ทั้งหมด และสามารถกำหนด Settings ให้กับแต่ละ block ได้ ซึ่ง Settings จะกำหนดได้เฉพาะ Settings ที่ block นั้น ๆ มีด้วย
 
 โดยแบ่งการตั้งค่าได้ด้งนี้
