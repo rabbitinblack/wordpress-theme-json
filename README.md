@@ -18,7 +18,7 @@
 }
 ```
 
-## Properties ที่ใช้
+# Properties ที่ใช้
 - [version](https://github.com/rabbitinblack/wordpress-theme-json#version)
 - [$schema](https://github.com/rabbitinblack/wordpress-theme-json#schema)
 - [settings](https://github.com/rabbitinblack/wordpress-theme-json#settings)
@@ -26,10 +26,10 @@
 - customTemplates
 - templateParts
 
-### version
+## version
 ในตอนที่อ่าน version ที่ให้ใช้เป็น version 2
 
-### $schema
+## $schema
 ใส่ https://schemas.wp.org/trunk/theme.json เพื่อช่วยในการเช็คว่าใส่ properties ถูกต้องมั้ย
 
 ```json
@@ -38,7 +38,7 @@
 }
 ```
 
-### settings
+## settings
 สำหรับกำหนด Settings ของ block ทั้งหมด และสามารถกำหนด Settings ให้กับแต่ละ block ได้ ซึ่ง Settings จะกำหนดได้เฉพาะ Settings ที่ block นั้น ๆ มีด้วย
 
 โดยแบ่งการตั้งค่าได้ด้งนี้
@@ -51,17 +51,25 @@
 - typography
 - custom
 
-#### appearanceTools
+### appearanceTools
 อันนี้ยังไม่รู้ว่าแตกต่างกันยังไง ระหว่าง `true` กับ `false`
 
-#### blocks
+### blocks
 สำหรับตั้งค่า settings แยกสำหรับ block ที่กำหนด โดยสามารถดู https://developer.wordpress.org/block-editor/reference-guides/core-blocks/ เพื่อใช้ประกอบในการตั้งค่า settings ของแต่ละ block และดูชื่อ block ที่ใช้ในการตั้งค่าได้ที่ด้านล่าง [Block List](https://github.com/rabbitinblack/wordpress-theme-json#block-list)
 
-#### border
-- color สามารถกำหนดสีของเส้นกรอบได้
-- radius สามารถกำหนดความมนของเส้นกรอบได้
-- style สามารถกำหนดลักษณะของเส้นกรอบได้
-- width สามารกำหนดความกว้างของเส้นกรอบได้
+### border
+- color สามารถกำหนดสีของเส้นกรอบ
+	- true ได้
+	- false ไม่ได้
+- radius สามารถกำหนดความมนของเส้นกรอบ
+	- true ได้
+	- false ไม่ได้
+- style สามารถกำหนดลักษณะของเส้นกรอบ
+	- true ได้
+	- false ไม่ได้
+- width สามารกำหนดความกว้างของเส้นกรอบ
+	- true ได้
+	- false ไม่ได้
 
 ```json
 "border": {
@@ -72,14 +80,26 @@
 }
 ```
 
-#### color
+### color
 สามารถกำหนด
-- background สามารถกำหนดสีให้ background ได้
-- custom สามารถปรับค่าสีที่กำหนดได้
-- customDuotone สามารถปรับค่าสีสำหรับ Duotone ได้
-- customGradient สามารถปรับค่าสีสำหรับ Gradient ได้
+- background สามารถกำหนดสีให้ background
+	- true ได้
+	- false ไม่ได้
+- custom สามารถปรับค่าสีที่กำหนด
+	- true ได้
+	- false ไม่ได้
+- customDuotone สามารถปรับค่าสีสำหรับ Duotone
+	- true ได้
+	- false ไม่ได้
+- customGradient สามารถปรับค่าสีสำหรับ Gradient
+	- true ได้
+	- false ไม่ได้
 - defaultGradients สามารถเลือกสีมาตรฐานของ Gradient ที่ WordPress เตรียมไว้ให้
+	- true ได้
+	- false ไม่ได้
 - defaultPalette สามารถเลือกชุดสีมาตรฐานที่ WordPress เตรียมไว้ให้
+	- true ได้
+	- false ไม่ได้
 - duotone สามารถกำหนดชุดสี Duotone ได้
 	- name
 	- slug
@@ -89,7 +109,7 @@
 - palette
 - text
 
-## Block List
+# Block List
 - core/archives
 - core/audio
 - core/block
