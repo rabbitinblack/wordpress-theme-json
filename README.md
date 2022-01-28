@@ -22,9 +22,9 @@
 - [version](https://github.com/rabbitinblack/wordpress-theme-json#version)
 - [$schema](https://github.com/rabbitinblack/wordpress-theme-json#schema)
 - [settings](https://github.com/rabbitinblack/wordpress-theme-json#settings)
-- styles
-- customTemplates
-- templateParts
+- [styles](https://github.com/rabbitinblack/wordpress-theme-json#styles)
+- [customTemplates](https://github.com/rabbitinblack/wordpress-theme-json#customtemplates)
+- [templateParts](https://github.com/rabbitinblack/wordpress-theme-json#templateparts)
 
 ## version
 ในตอนที่อ่าน version ที่ให้ใช้เป็น version 2
@@ -42,14 +42,14 @@
 สำหรับกำหนด Settings ของ block ทั้งหมด และสามารถกำหนด Settings ให้กับแต่ละ block ได้ ซึ่ง Settings จะกำหนดได้เฉพาะ Settings ที่ block นั้น ๆ มีด้วย
 
 โดยแบ่งการตั้งค่าได้ด้งนี้
-- appearanceTools
-- blocks
-- border
-- color
-- layout
-- spacing
-- typography
-- custom
+- [appearanceTools](https://github.com/rabbitinblack/wordpress-theme-json#appearancetools)
+- [blocks](https://github.com/rabbitinblack/wordpress-theme-json#blocks)
+- [border](https://github.com/rabbitinblack/wordpress-theme-json#border)
+- [color](https://github.com/rabbitinblack/wordpress-theme-json#color)
+- [layout](https://github.com/rabbitinblack/wordpress-theme-json#layout)
+- [spacing](https://github.com/rabbitinblack/wordpress-theme-json#spacing)
+- [typography](https://github.com/rabbitinblack/wordpress-theme-json#typography)
+- [custom](https://github.com/rabbitinblack/wordpress-theme-json#custom)
 
 ### appearanceTools
 จากที่อ่านคือ ถ้าเป็น `true` มันจะไปเปลี่ยน settings ของทุก block ที่เป็น `false` ให้เป็น `true` ทั้งหมด โดยเป็นกลุ่มนี้
