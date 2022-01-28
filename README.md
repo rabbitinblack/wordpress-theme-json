@@ -325,12 +325,13 @@
 
 ## styles
 สำหรับกำหนด CSS ให้กับตัว body โดยสามารถกำหนด
-- border
-- color
-- spacing
-- typography
-- elements
-- blocks
+- [border](https://github.com/rabbitinblack/wordpress-theme-json#border-1)
+- [color](https://github.com/rabbitinblack/wordpress-theme-json#color-1)
+- [spacing](https://github.com/rabbitinblack/wordpress-theme-json#spacing-1)
+- [typography](https://github.com/rabbitinblack/wordpress-theme-json#typography-1)
+- [elements](https://github.com/rabbitinblack/wordpress-theme-json#elements)
+- [blocks](https://github.com/rabbitinblack/wordpress-theme-json#blocks-1)
+
 โดยเราสามารถใช้ variable css ที่เรากำหนดใน settings มาใช้ด้วยได้ รวมถึง default ที่ WordPress เตรียมไว้ให้ เช่น `--wp--preset-color-white` หรือ `--wp--custom--border-style--solid`
 
 ### border
