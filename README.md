@@ -1,11 +1,8 @@
-{{TOC}}
 # WordPress Theme JSON
----
 สร้างไว้เพื่อเก็บสิ่งที่เรียนเกี่ยวกับ theme.json ของ WordPress และทำ File ไว้เพื่อเป็น Default สำหรับงานตัวเองที่จะใช้
 
 ## Properties ที่ใช้
----
-- $schema
+- [$schema](https://github.com/rabbitinblack/wordpress-theme-json#schema)
 - version
 - settings
 - styles
