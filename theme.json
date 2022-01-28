@@ -37,7 +37,7 @@
 					{
 					"name": "Black to White",
 					"slug": "black-white",
-					"gradient": "linear-gradient(135deg,rgb(0,0,0) 50%,rgb(255,0,255) 100%)"
+					"gradient": "linear-gradient(135deg,rgb(0,0,0) 50%,rgb(255,255,255) 100%)"
 				}
 			],
 			"link": true,
