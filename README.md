@@ -82,42 +82,42 @@
 
 ### color
 สามารถกำหนด
-- **background** สามารถกำหนดสีให้ background
-	- true ได้
-	- false ไม่ได้
-- **custom** สามารถปรับค่าสีที่กำหนด
-	- true ได้
-	- false ไม่ได้
-- **customDuotone** สามารถปรับค่าสีสำหรับ Duotone
-	- true ได้
-	- false ไม่ได้
-- **customGradient** สามารถปรับค่าสีสำหรับ Gradient
-	- true ได้
-	- false ไม่ได้
-- **defaultGradients** สามารถเลือกสีมาตรฐานของ Gradient ที่ WordPress เตรียมไว้ให้
-	- true ได้
-	- false ไม่ได้
-- **defaultPalette** สามารถเลือกชุดสีมาตรฐานที่ WordPress เตรียมไว้ให้
-	- true ได้
-	- false ไม่ได้
-- **duotone** สร้างชุดสีสำหรับ Duotone
-	- name ชื่อของ duotone นี้
-	- slug slug ของ duotone นี้ เพื่อนำไปสร้าง variable css ใน pattern นี้ `--wp--preset--duotone--{slug}`
-	- colors สีที่ใช้สำหรับ duotone เป็นคู่สีแบบ array
-- **gradients** สร้างชุดสีสำหรับ Gradients
-	- name ชื่อของ gradient นี้
-	- slug slug ของ gradient นี้ เพื่อนำไปสร้าง variable css ใน pattern นี้ `--wp--preset--gradient--{slug}`
-	- gradient สามารถใช้ https://cssgradient.io/ เพื่อปรับแต่ง gradient ที่ต้องการแล้วนำมาใส่
-- **link** สามารถเลือกสีสำหรับลิงก์
-	- true ได้
-	- false ไม่ได้
-- **palette** สร้างชุดสีพื้นฐาน
-	- name ชื่อของสีนี้
-	- slug slug ของสีนี้ เพื่อนำไปสร้าง variable css ใน pattern นี้ `--wp--preset--color--{slug}`
-	- color ค่าของสี โดยรูปแบบของค่าสีที่ใส่ สามารถดูได้จาก https://developer.mozilla.org/en-US/docs/Web/CSS/color
-- **text** สามารถเลือกสีให้ตัวอักษร
-	- true ได้
-	- false ไม่ได้
+- `background` สามารถกำหนดสีให้ background
+	- `true` ได้
+	- `false` ไม่ได้
+- `custom` สามารถปรับค่าสีที่กำหนด
+	- `true` ได้
+	- `false` ไม่ได้
+- `customDuotone` สามารถปรับค่าสีสำหรับ Duotone
+	- `true` ได้
+	- `false` ไม่ได้
+- `customGradient` สามารถปรับค่าสีสำหรับ Gradient
+	- `true` ได้
+	- `false` ไม่ได้
+- `defaultGradients` สามารถเลือกสีมาตรฐานของ Gradient ที่ WordPress เตรียมไว้ให้
+	- `true` ได้
+	- `false` ไม่ได้
+- `defaultPalette` สามารถเลือกชุดสีมาตรฐานที่ WordPress เตรียมไว้ให้
+	- `true` ได้
+	- `false` ไม่ได้
+- `duotone` สร้างชุดสีสำหรับ Duotone
+	- `name` ชื่อของ duotone นี้
+	- `slug` slug ของ duotone นี้ เพื่อนำไปสร้าง variable css ใน pattern นี้ `--wp--preset--duotone--{slug}`
+	- `colors` สีที่ใช้สำหรับ duotone เป็นคู่สีแบบ array
+- `gradients` สร้างชุดสีสำหรับ Gradients
+	- `name` ชื่อของ gradient นี้
+	- `slug` slug ของ gradient นี้ เพื่อนำไปสร้าง variable css ใน pattern นี้ `--wp--preset--gradient--{slug}`
+	- `gradient` สามารถใช้ https://cssgradient.io/ เพื่อปรับแต่ง gradient ที่ต้องการแล้วนำมาใส่
+- `link` สามารถเลือกสีสำหรับลิงก์
+	- `true` ได้
+	- `false` ไม่ได้
+- `palette` สร้างชุดสีพื้นฐาน
+	- `name` ชื่อของสีนี้
+	- `slug` slug ของสีนี้ เพื่อนำไปสร้าง variable css ใน pattern นี้ `--wp--preset--color--{slug}`
+	- `color` ค่าของสี โดยรูปแบบของค่าสีที่ใส่ สามารถดูได้จาก https://developer.mozilla.org/en-US/docs/Web/CSS/color
+- `text` สามารถเลือกสีให้ตัวอักษร
+	- `true` ได้
+	- `false` ไม่ได้
 
 ```json
 "color": {
