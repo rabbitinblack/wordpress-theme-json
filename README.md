@@ -169,13 +169,38 @@
 ```
 
 ### spacing
-- `blockGap` ทำให้ block สามารถกำหนดระยะห่าง
-==แต่จากที่ทดลองใช้งาน ยังงงกับมันอยู่ว่า จริง ๆ มันใช้งานอย่างไร==
+- `blockGap` ทำให้ block สามารถกำหนดระยะห่าง *แต่จากที่ทดลองใช้งาน ยังงงกับมันอยู่ว่า จริง ๆ มันใช้งานอย่างไร*
 	- `true` ได้
 	- `false` ไม่ได้
-- `margin`
-- `padding`
-- `units`
+- `margin` สามารถกำหนด margin
+	- `true` ได้
+	- `false` ไม่ได้
+- `padding` สามารถกำหนด padding
+	- `true` ได้
+	- `false` ไม่ได้
+- `units` กำหนด unit ที่จะให้ เป็น array
+	- `px`
+	- `em`
+	- `rem`
+	- `vh`
+	- `vw`
+	- `%`
+
+```json
+"spacing": {
+	"blockGap": true,
+	"margin": true,
+	"padding": true,
+	"units": [
+		"px",
+		"em",
+		"rem",
+		"vh",
+		"vw",
+		"%"
+	]
+}
+```
 
 # Block List
 - core/archives
