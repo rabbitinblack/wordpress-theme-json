@@ -52,22 +52,27 @@
 - custom
 
 ### appearanceTools
-อันนี้ยังไม่รู้ว่าแตกต่างกันยังไง ระหว่าง `true` กับ `false`
+จากที่อ่านคือ ถ้าเป็น `true` มันจะไปเปลี่ยน settings ของทุก block ที่เป็น `false` ให้เป็น `true` ทั้งหมด โดยเป็นกลุ่มนี้
+- `border`: color, radius, style, width
+- `color`: link
+- `spacing`: blockGap, margin, padding
+- `typography`: lineHeight
+แต่จากที่ทดลองทำ ก็ยังไม่รู้ว่าแตกต่างกันยังไง ระหว่าง `true` กับ `false`
 
 ### blocks
 สำหรับตั้งค่า settings แยกสำหรับ block ที่กำหนด โดยสามารถดู https://developer.wordpress.org/block-editor/reference-guides/core-blocks/ เพื่อใช้ประกอบในการตั้งค่า settings ของแต่ละ block และดูชื่อ block ที่ใช้ในการตั้งค่าได้ที่ด้านล่าง [Block List](https://github.com/rabbitinblack/wordpress-theme-json#block-list)
 
 ### border
-- `color` สามารถกำหนดสีของเส้นกรอบ
+- `color` กำหนดสีของเส้นกรอบ
 	- `true` ได้
 	- `false` ไม่ได้
-- `radius` สามารถกำหนดความมนของเส้นกรอบ
+- `radius` กำหนดความมนของเส้นกรอบ
 	- `true` ได้
 	- `false` ไม่ได้
-- `style` สามารถกำหนดลักษณะของเส้นกรอบ
+- `style` กำหนดลักษณะของเส้นกรอบ
 	- `true` ได้
 	- `false` ไม่ได้
-- `width` สามารกำหนดความกว้างของเส้นกรอบ
+- `width` กำหนดความกว้างของเส้นกรอบ
 	- `true` ได้
 	- `false` ไม่ได้
 
@@ -81,22 +86,22 @@
 ```
 
 ### color
-- `background` สามารถกำหนดสีให้ background
+- `background` กำหนดสีให้ background
 	- `true` ได้
 	- `false` ไม่ได้
-- `custom` สามารถปรับค่าสีที่กำหนด
+- `custom` ปรับค่าสีที่กำหนด
 	- `true` ได้
 	- `false` ไม่ได้
-- `customDuotone` สามารถปรับค่าสีสำหรับ Duotone
+- `customDuotone` ปรับค่าสีสำหรับ Duotone
 	- `true` ได้
 	- `false` ไม่ได้
-- `customGradient` สามารถปรับค่าสีสำหรับ Gradient
+- `customGradient` ปรับค่าสีสำหรับ Gradient
 	- `true` ได้
 	- `false` ไม่ได้
-- `defaultGradients` สามารถเลือกสีมาตรฐานของ Gradient ที่ WordPress เตรียมไว้ให้
+- `defaultGradients` เลือกสีมาตรฐานของ Gradient ที่ WordPress เตรียมไว้ให้
 	- `true` ได้
 	- `false` ไม่ได้
-- `defaultPalette` สามารถเลือกชุดสีมาตรฐานที่ WordPress เตรียมไว้ให้
+- `defaultPalette` เลือกชุดสีมาตรฐานที่ WordPress เตรียมไว้ให้
 	- `true` ได้
 	- `false` ไม่ได้
 - `duotone` สร้างชุดสีสำหรับ Duotone
@@ -107,14 +112,14 @@
 	- `name` ชื่อของ gradient นี้
 	- `slug` slug ของ gradient นี้ เพื่อนำไปสร้าง variable css ใน pattern นี้ `--wp--preset--gradient--{slug}`
 	- `gradient` สามารถใช้ https://cssgradient.io/ เพื่อปรับแต่ง gradient ที่ต้องการแล้วนำมาใส่
-- `link` สามารถเลือกสีสำหรับลิงก์
+- `link` เลือกสีสำหรับลิงก์
 	- `true` ได้
 	- `false` ไม่ได้
 - `palette` สร้างชุดสีพื้นฐาน
 	- `name` ชื่อของสีนี้
 	- `slug` slug ของสีนี้ เพื่อนำไปสร้าง variable css ใน pattern นี้ `--wp--preset--color--{slug}`
 	- `color` ค่าของสี โดยรูปแบบของค่าสีที่ใส่ สามารถดูได้จาก https://developer.mozilla.org/en-US/docs/Web/CSS/color
-- `text` สามารถเลือกสีให้ตัวอักษร
+- `text` เลือกสีให้ตัวอักษร
 	- `true` ได้
 	- `false` ไม่ได้
 
@@ -169,13 +174,13 @@
 ```
 
 ### spacing
-- `blockGap` ทำให้ block สามารถกำหนดระยะห่าง *แต่จากที่ทดลองใช้งาน ยังงงกับมันอยู่ว่า จริง ๆ มันใช้งานอย่างไร*
+- `blockGap` block สามารถกำหนดระยะห่างในแนวตั้ง *แต่จากที่ทดลองใช้งาน ยังงงกับมันอยู่ว่า จริง ๆ มันใช้งานอย่างไร*
 	- `true` ได้
 	- `false` ไม่ได้
-- `margin` สามารถกำหนด margin
+- `margin` กำหนด margin
 	- `true` ได้
 	- `false` ไม่ได้
-- `padding` สามารถกำหนด padding
+- `padding` กำหนด padding
 	- `true` ได้
 	- `false` ไม่ได้
 - `units` กำหนด unit ที่จะให้ เป็น array
@@ -200,6 +205,388 @@
 		"%"
 	]
 }
+```
+
+### typography
+- `customFontSize` กำหนดขนาดตัวอักษรเอง
+	- `true` ได้
+	- `false` ไม่ได้
+- `fontStyle` กำหนด Style ของตัวอักษร
+	- `true` ได้
+	- `false` ไม่ได้
+- `fontWeight` กำหนดน้ำหนักของตัวอักษร
+	- `true` ได้
+	- `false` ไม่ได้
+- `letterSpacing` กำหนดระยะห่างของตัวอักษร
+	- `true` ได้
+	- `false` ไม่ได้
+- `lineHeight` กำหนดระยะห่างของตัวอักษรระหว่างบรรทัด
+	- `true` ได้
+	- `false` ไม่ได้
+- `textDecoration` กำหนดลักษณะของเส้นที่ใช้ตกแต่งตัวอักษร
+	- `true` ได้
+	- `false` ไม่ได้
+- `textTransform` กำหนดการ Transform ให้ตัวอักษร https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform
+	- `true` ได้
+	- `false` ไม่ได้
+- `dropCap` กำหนดให้ตัวอักษรเป็น Dropcap
+	- `true` ได้
+	- `false` ไม่ได้
+- `fontSizes` สร้างขนาดของตัวอักษรไว้ให้เลือกได้ โดยกำหนดเป็น array
+	- `name` ชื่อของขนาดตัวอักษร
+	- 'slug' slug ของขนาดตัวอักษร เพื่อนำไปสร้าง variable css ใน pattern นี้ `--wp--preset--font-size--{slug}`
+	- `size` ขนาดของตัวอักษร โดยสามารถกำหนดเป็น `px`, `em`, `rem`, `vh`, `vw` และ `%` ได้
+- `fontFamilies` สร้างชุดของ font family เพื่อนำไปใช้งาน
+	- `name` ชื่อของ font family นี้
+	- `slug` slug ของ font family นี้  เพื่อนำไปสร้าง variable css ใน pattern นี้ `--wp--preset--font-family--{slug}`
+	- `fontFamily` ค่าของ font family ที่จะนำไปใช้ https://developer.mozilla.org/en-US/docs/Web/CSS/font-family
+
+```json
+"typography": {
+	"customFontSize": true,
+	"fontStyle": true,
+	"fontWeight": true,
+	"letterSpacing": true,
+	"lineHeight": true,
+	"textDecoration": true,
+	"textTransform": true,
+	"dropCap": true,
+	"fontSizes": [
+		{
+			"name": "Extra Small",
+			"slug": "xs",
+			"size": "0.75rem"
+		},
+		{
+			"name": "Small",
+			"slug": "sm",
+			"size": "0.875rem"
+		},
+		{
+			"name": "Default",
+			"slug": "md",
+			"size": "1rem"
+		},
+		{
+			"name": "Large",
+			"slug": "lg",
+			"size": "1.125rem"
+		},
+		{
+			"name": "Extra Large",
+			"slug": "xl",
+			"size": "1.25rem"
+		},
+		{
+			"name": "2XL",
+			"slug": "2xl",
+			"size": "1.5rem"
+		},
+		{
+			"name": "3XL",
+			"slug": "3xl",
+			"size": "1.875rem"
+		},
+		{
+			"name": "4XL",
+			"slug": "4xl",
+			"size": "2.25rem"
+		},
+		{
+			"name": "5XL",
+			"slug": "5xl",
+			"size": "3rem"
+		}
+	],
+	"fontFamilies": [
+		{
+			"name": "Default",
+			"slug": "default",
+			"fontFamily": "Arial, sans-serif"
+		}
+	]
+}
+```
+
+### custom
+สร้าง variable css ใน pattern นี้ `--wp--custom--color--{key}--{nest-key}` โดย `key` และ `nest-key` ถ้าเราเขียนแบบ `camelCased` มันจะถูกเปลี่ยนเป็น `kebab-case` รวมถึงเพื่อ follow ตามข้อกำหนดในการเขียน css property naming scheme ที่ถ้า `key` ใน level ที่ต่างกัน จะแบ่งด้วย `--` ดังนั้นเราจะไม่ใช้ `key` และ `nest-key` ที่มี `--` ประกอบ
+
+```json
+"custom": {
+	"borderStyle": {
+		"solid": "solid"
+	}
+}
+```
+
+ตามตัวอย่างมันจะไปสร้าง
+`--wp--custom--border-style--solid: "solid"`
+ไว้ เราสามารถนำไปใช้ต่อได้
+
+## styles
+สำหรับกำหนด CSS ให้กับตัว body โดยสามารถกำหนด
+- border
+- color
+- spacing
+- typography
+- elements
+- blocks
+โดยเราสามารถใช้ variable css ที่เรากำหนดใน settings มาใช้ด้วยได้ รวมถึง default ที่ WordPress เตรียมไว้ให้ เช่น `--wp--preset-color-white` หรือ `--wp--custom--border-style--solid`
+
+### border
+- `color` กำหนดสีให้กรอบ
+- `radius` กำหนดความมนให้กรอบ
+- `style` กำหนดรูปแบบของกรอบ
+- `width` กำหนดความหนาของกรอบ
+
+```json
+"border": {
+	"color": "#FF0000",
+	"radius": "5px",
+	"style": "solid",
+	"width": "1px"
+}
+```
+
+### color
+- `background` กำหนดสีพื้นหลัง
+- `gradient` กำหนดสีพื้นหลังแบบ gradient
+- `text` กำหนดสีตัวอักษร
+
+```json
+"color": {
+	"background": "var(--wp--preset--color--black)",
+	"gradient": "var(--wp--preset--gradient--black-white)",
+	"text": "var(--wp--preset--color--white)"
+}
+```
+
+### spacing
+- `blockGap` กำหนดขนาดของระยะห่างระหว่าง block
+- `margin` กำหนดขนาดของ margin โดยแบ่งเป็น
+	- `top`
+	- `right`
+	- `bottom`
+	- `left`
+- `padding` กำหนดขนาดของ padding โดยแบ่งเป็น
+	- `top`
+	- `right`
+	- `bottom`
+	- `left`
+
+```json
+"spacing": {
+	"blockGap": "var(--wp--custom--spacing--md)",
+	"margin": {
+		"top": "var(--wp--custom--spacing--md)",
+		"right": "var(--wp--custom--spacing--md)",
+		"bottom": "var(--wp--custom--spacing--md)",
+		"left": "var(--wp--custom--spacing--md)"
+	},
+	"padding": {
+		"top": "var(--wp--custom--spacing--md)",
+		"right": "var(--wp--custom--spacing--md)",
+		"bottom": "var(--wp--custom--spacing--md)",
+		"left": "var(--wp--custom--spacing--md)"
+	}
+}
+```
+
+### typography
+- `fontFamily` กำหนด font family
+- `fontSize` กำหนดขนาดตัวอักษร
+- `fontStyle` กำหนด style ของตัวอักษร
+- `fontWeight` กำหนดความหนาของตัวอักษร
+- `letterSpacing` กำหนดระยะห่างระหว่างตัวอักษร
+- `lineHeight` กำหนดระยะห่างระหว่างบรรทัด
+- `textDecoration` กำหนดลักษณะของเส้นที่ใช้ตกแต่งตัวอักษร
+- `textTransform` กำหนดการ Transform ของตัวอักษร
+
+```json
+"typography": {
+	"fontFamily": "var(--wp--preset--font-family--default)",
+	"fontSize": "var(--wp--preset--font-size--md)",
+	"fontStyle": "normal",
+	"fontWeight": "normal",
+	"letterSpacing": "0",
+	"lineHeight": "var(--wp--custom--line-height--xl)",
+	"textDecoration": "none",
+	"textTransform": "none"
+}
+```
+
+### elements
+เป็นการกำหนด CSS ให้กับ element ซึ่งเราสามารถใช้ได้กับ 7 elements นี้
+- `h1`
+- `h2`
+- `h3`
+- `h4`
+- `h5`
+- `h6`
+- `link`
+
+โดยแต่ละ element เราสามารถกำหนดสิ่งเหล่านี้ได้
+- `border`
+- `color`
+- `spacing`
+- `typography`
+
+```json
+"elements": {
+	"h1": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--default)",
+			"fontWeight": "bold",
+			"lineHeight": "var(--wp--custom--line-height--xs)",
+			"fontSize": "var(--wp--preset--font-size--5-xl)"
+		}
+	},
+	"h2": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--default)",
+			"fontWeight": "bold",
+			"lineHeight": "var(--wp--custom--line-height--sm)",
+			"fontSize": "var(--wp--preset--font-size--3-xl)"
+		}
+	},
+	"h3": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--default)",
+			"fontWeight": "bold",
+			"lineHeight": "var(--wp--custom--line-height--md)",
+			"fontSize": "var(--wp--preset--font-size--xl)"
+		}
+	},
+	"h4": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--default)",
+			"fontWeight": "bold",
+			"lineHeight": "var(--wp--custom--line-height--xl)",
+			"fontSize": "var(--wp--preset--font-size--md)"
+		}
+	},
+	"h5": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--default)",
+			"fontWeight": "bold",
+			"lineHeight": "var(--wp--custom--line-height--lg)",
+			"fontSize": "var(--wp--preset--font-size--sm)"
+		}
+	},
+	"h6": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--default)",
+			"fontWeight": "bold",
+			"lineHeight": "var(--wp--custom--line-height--md)",
+			"fontSize": "var(--wp--preset--font-size--xs)"
+		}
+	},
+	"link": {
+		"border": {
+			"color": "var(--wp--preset--color--white)",
+			"radius": "var(--wp--custom--border-radius--sm)",
+			"style": "var(--wp--custom--border-style--solid)",
+			"width": "var(--wp--custom--border-width--xs)"
+		},
+		"color": {
+			"text": "var(--wp--preset--color--white)"
+		},
+		"spacing": {
+			"margin": {
+				"top": "var(--wp--custom--spacing--sm)",
+				"right": "var(--wp--custom--spacing--sm)",
+				"bottom": "var(--wp--custom--spacing--sm)",
+				"left": "var(--wp--custom--spacing--sm)"
+			},
+			"padding": {
+				"top": "var(--wp--custom--spacing--sm)",
+				"right": "var(--wp--custom--spacing--sm)",
+				"bottom": "var(--wp--custom--spacing--sm)",
+				"left": "var(--wp--custom--spacing--sm)"
+			}
+		},
+		"typography": {
+			"fontWeight": "bold"
+		}
+	}
+}
+```
+
+### blocks
+สามารถกำหนด CSS ให้แต่ละ block ได้ ดูชื่อ block ที่ใช้ในการตั้งค่าได้ที่ด้านล่าง [Block List](https://github.com/rabbitinblack/wordpress-theme-json#block-list)
+โดยแต่ละ block เราสามารถกำหนดสิ่งเหล่านี้ได้
+- `border`
+- `color`
+- `spacing`
+- `typography`
+
+```json
+"blocks": {
+	"core/button": {
+		"border": {
+			"color": "var(--wp--preset--color--black)",
+			"radius": "var(--wp--custom--border-radius--sm)"
+		},
+		"color": {
+			"background": "var(--wp--preset--color--black)",
+			"text": "var(--wp--preset--color--white)"
+		},
+		"spacing": {
+			"margin": {
+				"top": "var(--wp--custom--spacing--sm)",
+				"right": "var(--wp--custom--spacing--sm)",
+				"bottom": "var(--wp--custom--spacing--sm)",
+				"left": "var(--wp--custom--spacing--sm)"
+			},
+			"padding": {
+				"top": "var(--wp--custom--spacing--sm)",
+				"right": "var(--wp--custom--spacing--sm)",
+				"bottom": "var(--wp--custom--spacing--sm)",
+				"left": "var(--wp--custom--spacing--sm)"
+			}
+		},
+		"typography": {
+			"fontSize": "var(--wp--preset--font-size--lg)"
+		}
+	}
+}
+```
+
+## customTemplates
+สร้าง Template ให้ใช้สำหรับ post, page หรือ custom post type ที่กำหนดได้ โดยทำเป็น File HTML เก็บไว้ใน Folder ชื่อ `templates`
+วิธีการกำหนดการใช้งานจะมี
+- `name` ชื่อของ File Template ใน Folder
+- `title` ชื่อของ Template
+- `postTypes` กำหนด post type ที่สามารถใช้งาน Template นี้ได้ในรูปแบบ Array ค่า Default ของมันจะเป็น `page`
+
+```json
+"customTemplates": [
+	{
+		"name": "blank",
+		"title": "Blank",
+		"postTypes": [
+			"page",
+			"post"
+		]
+	}
+]
+```
+
+## templateParts
+สร้าง Template เป็น Part เพื่อนำไปประกอบใน Custom Template หรือในการ Edit ที่หลังบ้าน WordPress ได้ โดยเป็น File HTML เก็บไว้ที่ Folder `parts`
+วิธีการกำหนดการใช้งานจะมี
+- `name` ชื่อของ File Template ใน Folder
+- `title` ชื่อของ Template
+- `area` กำหนด area ที่ Part นี้จะไปแสดงผล เท่าที่ดูตอนนี้จะมี `header`, `footer` และ `general`
+
+```json
+"templateParts": [
+	{
+		"name": "header",
+		"title": "Header",
+		"area": "header"
+	}
+]
 ```
 
 # Block List
