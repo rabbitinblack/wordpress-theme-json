@@ -18,7 +18,7 @@
 ```
 
 ## Properties ที่ใช้
-- version
+- [version](https://github.com/rabbitinblack/wordpress-theme-json#version)
 - [$schema](https://github.com/rabbitinblack/wordpress-theme-json#schema)
 - settings
 - styles
@@ -36,3 +36,18 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json"
 }
 ```
+### settings
+สำหรับกำหนด Settings ของ block ทั้งหมด และสามารถกำหนด Settings ให้กับแต่ละ block ได้ ซึ่ง Settings จะกำหนดได้เฉพาะ Settings ที่ block นั้น ๆ มีด้วย
+
+โดยแบ่งการตั้งค่าได้ด้งนี้
+- appearanceTools
+- blocks
+- border
+- color
+- layout
+- spacing
+- typography
+- custom
+
+#### appearanceTools
+อันนี้ยังไม่รู้ว่าแตกต่างกันยังไง ระหว่าง `true` กับ `false`
